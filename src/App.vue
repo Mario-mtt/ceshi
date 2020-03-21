@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 设置路由出口 -->
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 26.67vw;
+  }
+  body{
+    background-color: #f8f8f8;
+  }
+  img,span,i{
+    display: block;
+  }
+  i{
+    font-style: normal;
+  }
+  ul{
+    list-style: none;
+  }
+
 </style>
